@@ -4,82 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>emmet 개미 Emmet 약어를 사용하면 더 적은 타이핑으로 동일한 코드를 생성할 수 있습니다.</title>
+    <title>Document</title>
 </head>
 <body>
+    <h1>Hello YEJ</h1>  
+    <h1>Hello YEJ 1</h1>
+    <h1>Hello YEJ 2</h1>
+    <h1>Hello YEJ 3</h1>
+    <h1>Hello YEJ 4</h1>
+    <p>기본적으로 Git저장소를 초기화하면 "master" 또는 "main"과 같은 기본 브랜치가 생성된다.
+        즉 프로젝트의 주요 개발 라인이나 안정 버전을 나타낸다. 즉 새로운 기능 또는 수정 사항이 개발되고 테스트되는 다른 브랜치들을 이 메인 브랜치에 병합하여 안정적인 상태의 코드를 보유하게 됨.
+    </p>
+    <p>Git에서 브랜치는 코드의 독립적인 개발 경로를 나타낸다
+        즉, 기존의 코드 베이스에서 분기하여 독립적으로 작업할 수 있는 환경을 제공한다
+        기본적으로 "main"이나 "master" 브랜치가 있고, 이를 기준으로 다양한 브랜치를 생성하여 독립적으로 작업을 진행하고,
+        필요한 변경을 적용할수 있게 된다. 
+    </p>
 
+    git init: Git 저장소를 초기화하여 새로운 로컬 저장소를 생성합니다.
 
-    h1
-        <h1></h1>
+    git clone <repository>: 원격 저장소의 복제본을 로컬에 생성합니다. <repository>는 복제할 원격 저장소의 주소입니다.
     
-    table>tr>td
-        <table>
-            <tr>
-                <td></td>
-            </tr>
-        </table>
-
-    table>(tr>td*3)*4
-        <table>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
-
-    h1{hello}
-        <h1>hello</h1>
-
-    table>(tr>td{hello!}*3)*4
-        <table>
-            <tr>
-                <td>hello!</td>
-                <td>hello!</td>
-                <td>hello!</td>
-            </tr>
-            <tr>
-                <td>hello!</td>
-                <td>hello!</td>
-                <td>hello!</td>
-            </tr>
-            <tr>
-                <td>hello!</td>
-                <td>hello!</td>
-                <td>hello!</td>
-            </tr>
-            <tr>
-                <td>hello!</td>
-                <td>hello!</td>
-                <td>hello!</td>
-            </tr>
-        </table>
+    git add <file>: 변경된 파일을 스테이징 영역에 추가합니다. <file>은 추가할 파일의 경로입니다. 변경된 모든 파일을 추가하려면 git add . 명령을 사용할 수도 있습니다.
     
-    div.container>h1+ul>li*3
-        <div class="container">
-            <h1></h1>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        
-
+    git commit -m "<message>": 스테이징 영역에 있는 파일들을 커밋하여 버전을 기록합니다. <message>는 커밋에 대한 간단한 설명을 작성하는 메시지입니다.
+    
+    git status: 현재 작업 디렉토리의 상태를 확인합니다. 변경된 파일과 스테이징 영역의 상태를 보여줍니다.
+    
+    git log: 커밋 히스토리를 확인합니다. 커밋의 해시, 작성자, 날짜 및 메시지를 표시합니다.
+    
+    git pull: 원격 저장소에서 최신 변경 사항을 가져와 로컬 저장소로 병합합니다. 로컬 저장소를 원격 저장소의 상태로 업데이트합니다.
+    
+    git push: 로컬 저장소의 변경 사항을 원격 저장소로 업로드합니다.
+    
+    git branch: 브랜치 목록을 표시합니다. -r 옵션을 추가하여 원격 브랜치를 표시할 수도 있습니다.
+    
+    git checkout <branch>: 특정 브랜치로 전환합니다. <branch>는 전환할 브랜치의 이름입니다.
+    
+    git merge <branch>: 다른 브랜치의 변경 사항을 현재 브랜치로 병합합니다. <branch>는 병합할 브랜치의 이름입니다.
+    
+    git remote add <name> <url>: 원격 저장소를 추가합니다. <name>은 원격 저장소의 별칭이고, <url>은 원격 저장소의 주소입니다.
+    
+    git remote -v: 현재 설정된 모든 원격 저장소를 표시합니다.
+    
+    git diff: 작업 디렉토리와 스테이징 영역 또는 커밋 간의 차이를 보여줍니다.    
 </body>
 </html>
