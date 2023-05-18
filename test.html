@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emmet 개미 Emmet 약어를 사용하면 더 적은 타이핑으로 동일한 코드를 생성할 수 있습니다.</title>
+</head>
+<body>
+
+
+    h1
+        <h1></h1>
+    
+    table>tr>td
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+
+    table>(tr>td*3)*4
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+    h1{hello}
+        <h1>hello</h1>
+
+    table>(tr>td{hello!}*3)*4
+        <table>
+            <tr>
+                <td>hello!</td>
+                <td>hello!</td>
+                <td>hello!</td>
+            </tr>
+            <tr>
+                <td>hello!</td>
+                <td>hello!</td>
+                <td>hello!</td>
+            </tr>
+            <tr>
+                <td>hello!</td>
+                <td>hello!</td>
+                <td>hello!</td>
+            </tr>
+            <tr>
+                <td>hello!</td>
+                <td>hello!</td>
+                <td>hello!</td>
+            </tr>
+        </table>
+    
+    div.container>h1+ul>li*3
+        <div class="container">
+            <h1></h1>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        
+
+</body>
+</html>
